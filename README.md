@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/tip-calculator-app-using-reactjs-u773PtPOnL))
+- Solution URL: [here](https://www.frontendmentor.io/solutions/tip-calculator-app-using-reactjs-u773PtPOnL)
 - Live Site URL: [here](https://zun-liang.github.io/tip-calculator-app-main/)
 
 ## My process
