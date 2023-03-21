@@ -20,27 +20,27 @@ function Calculator() {
     }
 
     const redBorder = {
-        border: formData.numOfPeople == ""
+        border: formData.numOfPeople === ""
                 ? "none"
-                : formData.numOfPeople == 0
+                : formData.numOfPeople === 0
                 ? "2px solid var(--dark-red)"
                 : "none",
-        outline: formData.numOfPeople == ""
+        outline: formData.numOfPeople === ""
                  ? ""
-                 : formData.numOfPeople == 0
+                 : formData.numOfPeople === 0
                  ? "none"
                  : ""
     };
 
     const alert = {
-        display: formData.numOfPeople == ""
+        display: formData.numOfPeople === ""
                  ? "none"
-                 : formData.numOfPeople == 0
+                 : formData.numOfPeople === 0
                  ? "inline"
                  : "none",
-        color: formData.numOfPeople == ""
+        color: formData.numOfPeople === ""
                ? "white"
-               : formData.numOfPeople == 0
+               : formData.numOfPeople === 0
                ? "var(--dark-red)"
                : "white"
     }
@@ -56,11 +56,12 @@ function Calculator() {
     return (
         <div className="calculator">
             <div className="calculator--container">
-                <p className="calculator--item">Bill</p>
+                <label htmlFor="bill" className="calculator--item">Bill</label>
                 <input 
                     type="text"
                     onChange={handleChange}
                     name="bill"
+                    id="bill"
                     value={formData.bill}
                     className="calculator--input-dollar"/>
             </div>
@@ -73,15 +74,16 @@ function Calculator() {
             </div>
 
             <div className="calculator--container people--container">
-                <p className="calculator--item">
+                <label htmlFor="numOfPeople" className="calculator--item">
                     <span>Num of People</span>
                     <span className="alert" style={alert}>Can't be zero</span>
-                </p>
+                </label>
                 
                 <input 
                     type="text"
                     onChange={handleChange}
                     name="numOfPeople"
+                    id="numOfPeople"
                     value={formData.numOfPeople}
                     className="calculator--input-person" 
                     style={redBorder}/>
