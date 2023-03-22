@@ -144,7 +144,7 @@ input[type="radio"]:checked+label {
 }
 
 .selection--custom {
-  color: var(--grayish-cyan);
+  color: var(--very-dark-cyan);
   background-color: var(--very-light-grayish-cyan);
   padding-left: 15px;
   padding-right: 15px;
