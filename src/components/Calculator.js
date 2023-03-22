@@ -22,28 +22,15 @@ function Calculator() {
     const redBorder = {
         border: formData.numOfPeople === ""
                 ? "none"
-                : formData.numOfPeople === 0
+                : formData.numOfPeople === "0"
                 ? "2px solid var(--dark-red)"
                 : "none",
         outline: formData.numOfPeople === ""
                  ? ""
-                 : formData.numOfPeople === 0
+                 : formData.numOfPeople === "0"
                  ? "none"
                  : ""
     };
-
-    const alert = {
-        display: formData.numOfPeople === ""
-                 ? "none"
-                 : formData.numOfPeople === 0
-                 ? "inline"
-                 : "none",
-        color: formData.numOfPeople === ""
-               ? "white"
-               : formData.numOfPeople === 0
-               ? "var(--dark-red)"
-               : "white"
-    }
 
     function handleReset() {
         setFormData({
@@ -76,9 +63,8 @@ function Calculator() {
             <div className="calculator--container people--container">
                 <label htmlFor="numOfPeople" className="calculator--item">
                     <span>Num of People</span>
-                    <span className="alert" style={alert}>Can't be zero</span>
+                    {formData.numOfPeople === "0" &&<span className="alert">Can't be zero</span>}
                 </label>
-                
                 <input 
                     type="text"
                     onChange={handleChange}

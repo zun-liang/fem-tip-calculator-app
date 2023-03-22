@@ -71,6 +71,10 @@ body {
   justify-content: space-between;
 }
 
+.alert {
+  color: var(--dark-red);
+}
+
 .calculator--input-dollar,
 .calculator--input-person {
   width: 300px;
