@@ -32,13 +32,12 @@ const Calculator = () => {
                  : ""
     }
 
-    const handleReset = () => {
+    const handleReset = () => 
         setFormData({
             bill: "",
             tip: "",
             numOfPeople: ""
         })
-    }
 
     return (
         <div className="calculator">
