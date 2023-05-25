@@ -1,16 +1,16 @@
-import React from "react";
-import Selection from "./Selection";
-import Result from "./Result";
+import React, { useState } from "react"
+import Selection from "./Selection"
+import Result from "./Result"
 
-function Calculator() {
-    const [formData, setFormData] = React.useState({
+const Calculator = () => {
+    const [formData, setFormData] = useState({
         bill: "",
         tip: "",
         numOfPeople: ""
-    });
+    })
 
-    function handleChange(event) {
-        const {name, value} = event.target;
+    const handleChange = e => {
+        const {name, value} = e.target
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
@@ -30,9 +30,9 @@ function Calculator() {
                  : formData.numOfPeople === "0"
                  ? "none"
                  : ""
-    };
+    }
 
-    function handleReset() {
+    const handleReset = () => {
         setFormData({
             bill: "",
             tip: "",
@@ -82,4 +82,4 @@ function Calculator() {
     )
 }
 
-export default Calculator;
+export default Calculator
