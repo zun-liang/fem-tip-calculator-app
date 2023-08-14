@@ -29,14 +29,16 @@ body {
   font-size: 14px;
   font-family: 'Space Mono', monospace;
   background-color: var(--light-grayish-cyan);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
 /* App.js styling */
 
 .App {
-  width: 375px;
+  width: 100vw;
+  min-width: 320px;
+  max-width: 375px;
   margin: 0 auto;
 }
 
@@ -61,6 +63,7 @@ body {
   border-radius: 15px;
   background-color: white;
   padding: 30px 20px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -234,8 +237,13 @@ input[type="radio"]:checked+label {
 /* desktop styling */
 
 @media (min-width: 900px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .App {
     width: 800px;
+    max-width: none;
     height: 560px;
     margin: 100px auto;
   }
