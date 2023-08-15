@@ -53,7 +53,7 @@ const Selection = props =>
         <label htmlFor="50%" className="selection--option">50%</label>
 
         <input 
-            type="text" 
+            type="number" 
             placeholder="Custom" 
             onChange={props.handleChange}
             name="tip"
