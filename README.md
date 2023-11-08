@@ -15,7 +15,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
@@ -52,16 +51,18 @@ Users should be able to:
 - React hooks
 - API
 
-
 ### Useful resources
+
 - [How to Convert a String to a Number in JavaScript](https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/)
 - [How TO - Hide Arrows From Input Number](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
 - [HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
 
 ## Author
 
-- Website - [Zun Liang](https://zun-liang.github.io/)
+- Website - [Zun Liang](https://zunldev.com/)
+- GitHub - [@zun-liang](https://github.com/zun-liang)
 - Frontend Mentor - [@zun-liang](https://www.frontendmentor.io/profile/zun-liang)
+- freeCodeCamp - [@zun-liang](https://www.freecodecamp.org/zun-liang)
 
 ## Acknowledgments
 
